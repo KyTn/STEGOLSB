@@ -1,0 +1,1023 @@
+====================================================================================================
+Tecnicas Esteganograficas en imagenes basadas ocultacion en los bits menos significativos (LSB)
+Procesamiento de Imagenes Digitales 2013-2014
+E.T.S.I. Informatica. Universidad de Sevilla
+
+Autores:
+Manuel Jesus Gonzalez Rodriguez
+Angel Cayetano Gomez Gil
+====================================================================================================
+
+
+____________________________________________________________________________________________________
+--LSB simple--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 1053ms.
+PSNR entre la imagen original y la estego-imagen generada: 96.984415809
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 36283ms.
+____________________________________________________________________________________________________
+--LSB usando una clave privada y el operador XOR--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 25ms.
+Clave generada: 39262033744853917417451790589323639293655238444727291156514592801770348640163
+PSNR entre la imagen original y la estego-imagen generada: 83.1606427743
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 15ms.
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+--2LSB--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 25ms.
+Clave generada: 43947759982646884908111466438534648320303404539266810647482855902327328331088
+PSNR entre la imagen original y la estego-imagen generada: 82.9980725636
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 15ms.
+____________________________________________________________________________________________________
+Resumen de resultados
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 1053
+Duracion de la extraccion: 36283
+PSNR: 96.984415809
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 83.1606427743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 82.9980725636
+___________________________
+
+____________________________________________________________________________________________________
+--LSB simple--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 1055ms.
+PSNR entre la imagen original y la estego-imagen generada: 83.0963016743
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 36431ms.
+____________________________________________________________________________________________________
+--LSB usando una clave privada y el operador XOR--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 71ms.
+Clave generada: 53988860653046561416995884249327543666130120494102436199832113696897329970164
+PSNR entre la imagen original y la estego-imagen generada: 83.2040725844
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 47ms.
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+--2LSB--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 79ms.
+Clave generada: 54818307007281657215145482969988079702869528146129604165379192317301932074158
+PSNR entre la imagen original y la estego-imagen generada: 80.2046982809
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 55ms.
+____________________________________________________________________________________________________
+Resumen de resultados
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 1053
+Duracion de la extraccion: 36283
+PSNR: 96.984415809
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 83.1606427743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 82.9980725636
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 1055
+Duracion de la extraccion: 36431
+PSNR: 83.0963016743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 71
+Duracion de la extraccion: 47
+PSNR: 83.2040725844
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 79
+Duracion de la extraccion: 55
+PSNR: 80.2046982809
+___________________________
+
+____________________________________________________________________________________________________
+--LSB simple--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 431ms.
+PSNR entre la imagen original y la estego-imagen generada: 94.0771154188
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 15443ms.
+____________________________________________________________________________________________________
+--LSB usando una clave privada y el operador XOR--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 14ms.
+Clave generada: 69880299365583670057952059267403708671955553441159956664990404543940037317657
+PSNR entre la imagen original y la estego-imagen generada: 81.0021550396
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 9ms.
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+--2LSB--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 14ms.
+Clave generada: 114256641544110852367215548415041969380993221376863062539423676269699285678697
+PSNR entre la imagen original y la estego-imagen generada: 80.7831366251
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 9ms.
+____________________________________________________________________________________________________
+Resumen de resultados
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 1053
+Duracion de la extraccion: 36283
+PSNR: 96.984415809
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 83.1606427743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 82.9980725636
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 1055
+Duracion de la extraccion: 36431
+PSNR: 83.0963016743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 71
+Duracion de la extraccion: 47
+PSNR: 83.2040725844
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 79
+Duracion de la extraccion: 55
+PSNR: 80.2046982809
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 431
+Duracion de la extraccion: 15443
+PSNR: 94.0771154188
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 81.0021550396
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 80.7831366251
+___________________________
+
+____________________________________________________________________________________________________
+--LSB simple--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 458ms.
+PSNR entre la imagen original y la estego-imagen generada: 79.2341170253
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 15337ms.
+____________________________________________________________________________________________________
+--LSB usando una clave privada y el operador XOR--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 57ms.
+Clave generada: 93537530052115597519183263926109894943890270303170852034537712243366027894242
+PSNR entre la imagen original y la estego-imagen generada: 81.0236017243
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 38ms.
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+--2LSB--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 67ms.
+Clave generada: 61260434005566046446375952694939813281092773075042484161284069336359237930827
+PSNR entre la imagen original y la estego-imagen generada: 77.1179228904
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 47ms.
+____________________________________________________________________________________________________
+Resumen de resultados
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 1053
+Duracion de la extraccion: 36283
+PSNR: 96.984415809
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 83.1606427743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 82.9980725636
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 1055
+Duracion de la extraccion: 36431
+PSNR: 83.0963016743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 71
+Duracion de la extraccion: 47
+PSNR: 83.2040725844
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 79
+Duracion de la extraccion: 55
+PSNR: 80.2046982809
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 431
+Duracion de la extraccion: 15443
+PSNR: 94.0771154188
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 81.0021550396
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 80.7831366251
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 458
+Duracion de la extraccion: 15337
+PSNR: 79.2341170253
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 57
+Duracion de la extraccion: 38
+PSNR: 81.0236017243
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 67
+Duracion de la extraccion: 47
+PSNR: 77.1179228904
+___________________________
+
+____________________________________________________________________________________________________
+--LSB simple--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 433ms.
+PSNR entre la imagen original y la estego-imagen generada: 94.2998793659
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 12414ms.
+____________________________________________________________________________________________________
+--LSB usando una clave privada y el operador XOR--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 10ms.
+Clave generada: 76413067529671252579679015007537018734503584980628258718338515727496481942616
+PSNR entre la imagen original y la estego-imagen generada: 81.0776864185
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 5ms.
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+--2LSB--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 11ms.
+Clave generada: 104874154966141173005807548082222654298564732738201308435154671903116079451196
+PSNR entre la imagen original y la estego-imagen generada: 80.8240117016
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 6ms.
+____________________________________________________________________________________________________
+Resumen de resultados
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 1053
+Duracion de la extraccion: 36283
+PSNR: 96.984415809
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 83.1606427743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 82.9980725636
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 1055
+Duracion de la extraccion: 36431
+PSNR: 83.0963016743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 71
+Duracion de la extraccion: 47
+PSNR: 83.2040725844
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 79
+Duracion de la extraccion: 55
+PSNR: 80.2046982809
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 431
+Duracion de la extraccion: 15443
+PSNR: 94.0771154188
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 81.0021550396
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 80.7831366251
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 458
+Duracion de la extraccion: 15337
+PSNR: 79.2341170253
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 57
+Duracion de la extraccion: 38
+PSNR: 81.0236017243
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 67
+Duracion de la extraccion: 47
+PSNR: 77.1179228904
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 433
+Duracion de la extraccion: 12414
+PSNR: 94.2998793659
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 10
+Duracion de la extraccion: 5
+PSNR: 81.0776864185
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 11
+Duracion de la extraccion: 6
+PSNR: 80.8240117016
+___________________________
+
+____________________________________________________________________________________________________
+--LSB simple--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 447ms.
+PSNR entre la imagen original y la estego-imagen generada: 79.2770459892
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 12355ms.
+____________________________________________________________________________________________________
+--LSB usando una clave privada y el operador XOR--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 44ms.
+Clave generada: 107004009708233981436877890633299634899625381178446277273566470947722133093631
+PSNR entre la imagen original y la estego-imagen generada: 81.0128651432
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 26ms.
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+--2LSB--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 52ms.
+Clave generada: 73326908549367701140687959641868026377340885860801495531301571704430880990221
+PSNR entre la imagen original y la estego-imagen generada: 77.2062869727
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 34ms.
+____________________________________________________________________________________________________
+Resumen de resultados
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 1053
+Duracion de la extraccion: 36283
+PSNR: 96.984415809
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 83.1606427743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 82.9980725636
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 1055
+Duracion de la extraccion: 36431
+PSNR: 83.0963016743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 71
+Duracion de la extraccion: 47
+PSNR: 83.2040725844
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 79
+Duracion de la extraccion: 55
+PSNR: 80.2046982809
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 431
+Duracion de la extraccion: 15443
+PSNR: 94.0771154188
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 81.0021550396
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 80.7831366251
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 458
+Duracion de la extraccion: 15337
+PSNR: 79.2341170253
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 57
+Duracion de la extraccion: 38
+PSNR: 81.0236017243
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 67
+Duracion de la extraccion: 47
+PSNR: 77.1179228904
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 433
+Duracion de la extraccion: 12414
+PSNR: 94.2998793659
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 10
+Duracion de la extraccion: 5
+PSNR: 81.0776864185
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 11
+Duracion de la extraccion: 6
+PSNR: 80.8240117016
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 447
+Duracion de la extraccion: 12355
+PSNR: 79.2770459892
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 44
+Duracion de la extraccion: 26
+PSNR: 81.0128651432
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 52
+Duracion de la extraccion: 34
+PSNR: 77.2062869727
+___________________________
+
+____________________________________________________________________________________________________
+--LSB simple--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 52ms.
+PSNR entre la imagen original y la estego-imagen generada: 84.4510357557
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 1886ms.
+____________________________________________________________________________________________________
+--LSB usando una clave privada y el operador XOR--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 5ms.
+Clave generada: 38467321737131089395051376829611062582780365857617600447537128538583423884885
+PSNR entre la imagen original y la estego-imagen generada: 75.6866578335
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 4ms.
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+--2LSB--
+
+Mensaje a ocultar: Sic parvis magna
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 6ms.
+Clave generada: 38979301499164903358198300044325211359989339138115332676569542941554353079684
+PSNR entre la imagen original y la estego-imagen generada: 75.0725148232
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Sic parvis magna. Tiempo requerido: 4ms.
+____________________________________________________________________________________________________
+Resumen de resultados
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 1053
+Duracion de la extraccion: 36283
+PSNR: 96.984415809
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 83.1606427743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 82.9980725636
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 1055
+Duracion de la extraccion: 36431
+PSNR: 83.0963016743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 71
+Duracion de la extraccion: 47
+PSNR: 83.2040725844
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 79
+Duracion de la extraccion: 55
+PSNR: 80.2046982809
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 431
+Duracion de la extraccion: 15443
+PSNR: 94.0771154188
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 81.0021550396
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 80.7831366251
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 458
+Duracion de la extraccion: 15337
+PSNR: 79.2341170253
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 57
+Duracion de la extraccion: 38
+PSNR: 81.0236017243
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 67
+Duracion de la extraccion: 47
+PSNR: 77.1179228904
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 433
+Duracion de la extraccion: 12414
+PSNR: 94.2998793659
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 10
+Duracion de la extraccion: 5
+PSNR: 81.0776864185
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 11
+Duracion de la extraccion: 6
+PSNR: 80.8240117016
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 447
+Duracion de la extraccion: 12355
+PSNR: 79.2770459892
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 44
+Duracion de la extraccion: 26
+PSNR: 81.0128651432
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 52
+Duracion de la extraccion: 34
+PSNR: 77.2062869727
+___________________________
+
+Dimension de la imagen: (300, 300)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 52
+Duracion de la extraccion: 1886
+PSNR: 84.4510357557
+___________________________
+
+Dimension de la imagen: (300, 300)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 5
+Duracion de la extraccion: 4
+PSNR: 75.6866578335
+___________________________
+
+Dimension de la imagen: (300, 300)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 6
+Duracion de la extraccion: 4
+PSNR: 75.0725148232
+___________________________
+
+____________________________________________________________________________________________________
+--LSB simple--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 87ms.
+PSNR entre la imagen original y la estego-imagen generada: 69.8556749565
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 1878ms.
+____________________________________________________________________________________________________
+--LSB usando una clave privada y el operador XOR--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 53ms.
+Clave generada: 30928638552830559667022308655805664090972170577904074229423129508582605367273
+PSNR entre la imagen original y la estego-imagen generada: 75.7980214947
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 37ms.
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+--2LSB--
+
+Mensaje a ocultar: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ocultando mensaje...
+Mensaje ocultado. Tiempo de ejecucion: 62ms.
+Clave generada: 49079209469123494452772652754327722326977252086456844410397477656280473951520
+PSNR entre la imagen original y la estego-imagen generada: 69.0221889567
+Comprobacion del mensaje oculto. Extrayendo mensaje...
+Mensaje extraido: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. Tiempo requerido: 44ms.
+____________________________________________________________________________________________________
+Resumen de resultados
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 1053
+Duracion de la extraccion: 36283
+PSNR: 96.984415809
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 83.1606427743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 25
+Duracion de la extraccion: 15
+PSNR: 82.9980725636
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 1055
+Duracion de la extraccion: 36431
+PSNR: 83.0963016743
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 71
+Duracion de la extraccion: 47
+PSNR: 83.2040725844
+___________________________
+
+Dimension de la imagen: (1600, 1200)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 79
+Duracion de la extraccion: 55
+PSNR: 80.2046982809
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 431
+Duracion de la extraccion: 15443
+PSNR: 94.0771154188
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 81.0021550396
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 14
+Duracion de la extraccion: 9
+PSNR: 80.7831366251
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 458
+Duracion de la extraccion: 15337
+PSNR: 79.2341170253
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 57
+Duracion de la extraccion: 38
+PSNR: 81.0236017243
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 67
+Duracion de la extraccion: 47
+PSNR: 77.1179228904
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 433
+Duracion de la extraccion: 12414
+PSNR: 94.2998793659
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 10
+Duracion de la extraccion: 5
+PSNR: 81.0776864185
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 11
+Duracion de la extraccion: 6
+PSNR: 80.8240117016
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 447
+Duracion de la extraccion: 12355
+PSNR: 79.2770459892
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 44
+Duracion de la extraccion: 26
+PSNR: 81.0128651432
+___________________________
+
+Dimension de la imagen: (1024, 768)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 52
+Duracion de la extraccion: 34
+PSNR: 77.2062869727
+___________________________
+
+Dimension de la imagen: (300, 300)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 52
+Duracion de la extraccion: 1886
+PSNR: 84.4510357557
+___________________________
+
+Dimension de la imagen: (300, 300)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 5
+Duracion de la extraccion: 4
+PSNR: 75.6866578335
+___________________________
+
+Dimension de la imagen: (300, 300)
+Dimension del mensaje: 128
+Duracion de la ocultacion: 6
+Duracion de la extraccion: 4
+PSNR: 75.0725148232
+___________________________
+
+Dimension de la imagen: (300, 300)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 87
+Duracion de la extraccion: 1878
+PSNR: 69.8556749565
+___________________________
+
+Dimension de la imagen: (300, 300)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 53
+Duracion de la extraccion: 37
+PSNR: 75.7980214947
+___________________________
+
+Dimension de la imagen: (300, 300)
+Dimension del mensaje: 3568
+Duracion de la ocultacion: 62
+Duracion de la extraccion: 44
+PSNR: 69.0221889567
+___________________________
+
